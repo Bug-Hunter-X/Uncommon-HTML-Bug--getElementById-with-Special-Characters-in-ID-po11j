@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to select an element with an ID containing special characters
+    var myElement = document.getElementById('myDiv$');
+    myElement.innerHTML = 'Text changed';
+  </script>
+</body>
+</html>
